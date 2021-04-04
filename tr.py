@@ -10,5 +10,5 @@ for i in range(0, n):
 for i in range(n):
   print("  " * (n - i), end = " ", sep = " ")
   for j in range(0, i + 1):
-    print('{0:3}'.format(lists[i][j]), end=" ", sep=" ")
+    print('{0:4}'.format(lists[i][j]), end="", sep=" ")
   print()
