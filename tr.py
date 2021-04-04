@@ -8,7 +8,7 @@ for i in range(0, n):
         new_list.append(int(math.factorial(i)/(math.factorial(j)*math.factorial(i-j))))
     lists.append(new_list)
 for i in range(n):
-  print(" " * (n - i), end = " ", sep = " ")
+  print("  " * (n - i), end = " ", sep = " ")
   for j in range(0, i + 1):
-    print('{0:3}'.format(lists[i][j]), end="", sep=" ")
+    print('{0:3}'.format(lists[i][j]), end=" ", sep=" ")
   print()
