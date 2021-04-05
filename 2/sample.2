@@ -1,0 +1,12 @@
+import math
+new_list=[] #список для каждой строки
+lists=[] #список для всего треугольника
+n=int(input())
+for i in range(0, n):
+    new_list = []
+    for j in range(0, i+1):
+        new_list.append(int(math.factorial(i)/(math.factorial(j)*math.factorial(i-j))))
+    lists.append(new_list)
+p = len('    '.join(map(str, lists[-1])))
+for i in lists:
+    print('    '.join(map(str, i)).center(p)+'\n')
